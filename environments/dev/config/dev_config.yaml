@@ -1,0 +1,52 @@
+Cloud Citizens:
+  name: Cloud Citizens
+  
+  project_features:
+    boards: disabled       
+    repositories: disabled 
+    pipelines: disabled    
+    testplans: disabled    
+    artifacts: disabled    
+  
+  pipeline_settings:
+    enforce_job_scope: true
+    enforce_job_scope_for_release: true
+    enforce_referenced_repo_scoped_token: false
+    enforce_settable_var: false
+    publish_pipeline_metadata: false
+    status_badges_are_private: true
+  
+  policies:
+    author_email_pattern: 
+      pattern: ["*@schiphol.nl"]
+      enabled: false
+      blocking: false
+    
+    case_enforcement:
+      blocking: false
+      enabled: false
+      enforce_consistent_case: false
+    
+    check_credentials:
+      enabled: false
+      blocking: false
+
+    file_path_pattern:
+      enabled: false
+      blocking: false
+      pattern: ["*.go"]
+    
+    max_file_size:
+      enabled: false
+      blocking: false
+      max_size: 200
+    
+    max_path_length:
+      max_length: 1000
+      blocking: false
+      enabled: false
+    
+    reserved_names:
+      blocking: false
+      enabled: false
+    

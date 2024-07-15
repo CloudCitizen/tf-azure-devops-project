@@ -1,0 +1,68 @@
+{
+  "version": 4,
+  "terraform_version": "1.9.2",
+  "serial": 3,
+  "lineage": "2e2dc69e-5d1a-1c07-c1fa-2254135f1abf",
+  "outputs": {
+    "debug": {
+      "value": "ca3efdf7-880a-4d90-b381-19bc2f7210c9",
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "mode": "data",
+      "type": "azuredevops_project",
+      "name": "example",
+      "provider": "provider[\"registry.terraform.io/microsoft/azuredevops\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "description": "",
+            "features": {},
+            "id": "ca3efdf7-880a-4d90-b381-19bc2f7210c9",
+            "name": "Cloud Citizens",
+            "process_template_id": "b8a3a935-7e91-48b8-a94c-606d37c3e9f2",
+            "project_id": "ca3efdf7-880a-4d90-b381-19bc2f7210c9",
+            "version_control": "Git",
+            "visibility": "private",
+            "work_item_template": "Basic"
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    },
+    {
+      "module": "module.azuredevops_project",
+      "mode": "managed",
+      "type": "azuredevops_project",
+      "name": "this",
+      "provider": "provider[\"registry.terraform.io/microsoft/azuredevops\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "description": "",
+            "features": {},
+            "id": "ca3efdf7-880a-4d90-b381-19bc2f7210c9",
+            "name": "Cloud Citizens",
+            "process_template_id": "b8a3a935-7e91-48b8-a94c-606d37c3e9f2",
+            "timeouts": {
+              "create": null,
+              "delete": null,
+              "read": null,
+              "update": null
+            },
+            "version_control": "Git",
+            "visibility": "private",
+            "work_item_template": "Basic"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMDAsImRlbGV0ZSI6NjAwMDAwMDAwMDAwLCJyZWFkIjozMDAwMDAwMDAwMDAsInVwZGF0ZSI6NjAwMDAwMDAwMDAwfSwic2NoZW1hX3ZlcnNpb24iOiIwIn0="
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
